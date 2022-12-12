@@ -1,2 +1,2 @@
 # arvore-bst
- Árvore BST
+ Árvore BST (Árvore Binária de Busca)
