@@ -24,3 +24,27 @@ no* inserir(no *raiz, int valor){
         return raiz;
     }
 }
+
+void preOrder(no *raiz){
+    if(raiz != NULL){
+        printf("[%d]", raiz->valor);
+        preOrder(raiz->esq);
+        preOrder(raiz->dir);
+    }
+}
+
+void inOrder(no *raiz){
+    if(raiz != NULL){
+        inOrder(raiz->esq);
+        printf("[%d]", raiz->valor);
+        inOrder(raiz->dir);
+    }
+}
+
+void posOrder(no *raiz){
+    if(raiz != NULL){
+        posOrder(raiz->esq);
+        posOrder(raiz->dir);
+        printf("[%d]", raiz-valor);
+    }
+}
