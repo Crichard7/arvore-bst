@@ -45,6 +45,6 @@ void posOrder(no *raiz){
     if(raiz != NULL){
         posOrder(raiz->esq);
         posOrder(raiz->dir);
-        printf("[%d]", raiz-valor);
+        printf("[%d]", raiz->valor);
     }
 }
