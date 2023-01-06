@@ -48,3 +48,20 @@ void posOrder(no *raiz){
         printf("[%d]", raiz->valor);
     }
 }
+
+no* buscar(no *raiz, int valor){
+    if(raiz != NULL){
+        if(valor == raiz->valor){
+            return raiz;
+        }
+        else if(valor < raiz->valor{
+            return buscar(raiz->esq, valor);
+        }
+        else{
+            return buscar(raiz->dir, valor);
+        }
+    }
+    else{
+        return NULL;
+    }
+}

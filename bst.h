@@ -19,5 +19,8 @@ void inOrder(no *raiz);
 //opção 4
 void posOrder(no *raiz);
 
+//opção 5
+no* buscar(no* raiz, int valor);
+
 
 #endif
