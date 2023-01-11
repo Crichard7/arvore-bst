@@ -8,7 +8,7 @@ int main(){
     do{
         printf("\nArvore BST\n1- Inserir\n2 - Imprimir em ordem\n3 - Buscar valor\n0 - Sair");
         printf("\nDigite uma opcao: \n");
-        scanf("%d", opcao);
+        scanf("%d", &opcao);
         switch(opcao){
             case 1:
                 //Inserir
@@ -23,7 +23,7 @@ int main(){
             case 3:
                 //Buscar
                 printf("\nDigite o valor que ser procurado: \n");
-                scanf("%d", valor);
+                scanf("%d", &valor);
                 busca = buscar(raiz, valor);
                 if(busca != NULL){
                     printf("\nValor encontrado: %d\n", busca->valor);
