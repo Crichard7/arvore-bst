@@ -54,7 +54,7 @@ no* buscar(no *raiz, int valor){
         if(valor == raiz->valor){
             return raiz;
         }
-        else if(valor < raiz->valor{
+        else if(valor < raiz->valor){
             return buscar(raiz->esq, valor);
         }
         else{
