@@ -1,5 +1,6 @@
-#include<stdio.h>
 #include "bst.h"
+#include <stdio.h>
+
 
 int main(){
     no *busca, *raiz = NULL;
