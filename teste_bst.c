@@ -34,7 +34,7 @@ int main(){
                 }
                 break;
             default:
-                if(opcao != 0);
+                if(opcao != 0)
                 printf("\nOpcao Invalida!!!\n");
         }
     }while(opcao != 0);
