@@ -20,6 +20,7 @@ int main(){
             case 2:
                 //Imprimir em Ordem
                 inOrder(raiz);
+                printf("\n");
                 break;
             case 3:
                 //Buscar
