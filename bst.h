@@ -7,20 +7,23 @@ typedef struct no {
     struct no *dir;
 } no;
 
-//opção 1
+//opção 1 - Inserir
 no* inserir(no *raiz, int valor);
 
-//opção 2
+//opção 2 - Imprimir pré ordem
 void preOrder(no *raiz);
 
-//opção 3
+//opção 3 - Imprimir em ordem
 void inOrder(no *raiz);
 
-//opção 4
+//opção 4 - Imprimir pós ordem
 void posOrder(no *raiz);
 
-//opção 5
+//opção 5 - Buscar elementos na árvore bst
 no* buscar(no* raiz, int valor);
+
+//opção 6 - Calcular altura da árvore bst
+int altura(no *raiz);
 
 
 #endif
