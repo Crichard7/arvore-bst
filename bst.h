@@ -31,5 +31,8 @@ int qtd_nos(no *raiz);
 // opção 8 - Calcular a quantidade de folhas da árvore bst
 int qtd_folhas(no *raiz);
 
+// opção 9 - remover nó da árvore bst
+no* remover(no *raiz, int valor);
+
 
 #endif
