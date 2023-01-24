@@ -7,7 +7,7 @@ int main(){
     int opcao, valor;
 
     do{
-        //printf("\nArvore BST\n1- Inserir\n2 - Imprimir em ordem\n3 - Buscar valor\n0 - Sair");
+        //printf("\nArvore BST\n1- Inserir\n2 - Imprimir em ordem\n3 - Buscar valor\n4 - Calcualr altura\n0 - Sair");
         //printf("\nDigite uma opcao: \n");
         scanf("%d", &opcao);
         switch(opcao){
@@ -33,6 +33,11 @@ int main(){
                 else{
                     printf("\nValor nao encontrado\n");
                 }
+                break;
+            case 4:
+                //Calcular altura
+                printf("%d", altura(raiz));
+                printf("\n");
                 break;
             default:
                 if(opcao != 0)
