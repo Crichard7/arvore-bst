@@ -25,5 +25,11 @@ no* buscar(no* raiz, int valor);
 //opção 6 - Calcular altura da árvore bst
 int altura(no *raiz);
 
+// opção 7 - Calcular quantidade de nós da árvore bst
+int qtd_nos(no *raiz);
+
+// opção 8 - Calcular a quantidade de folhas da árvore bst
+int qtd_folhas(no *raiz);
+
 
 #endif
