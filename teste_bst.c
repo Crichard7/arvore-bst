@@ -7,7 +7,7 @@ int main(){
     int opcao, valor;
 
     do{
-        //printf("\nArvore BST\n1- Inserir\n2 - Imprimir em ordem\n3 - Buscar valor\n4 - Calcualr altura\n0 - Sair");
+        //printf("\nArvore BST\n1- Inserir\n2 - Imprimir em ordem\n3 - Buscar valor\n4 - Calcualr altura\n5 - Calcular quantidade de nos\n6 - Calcular quantidade de folhas\n0 - Sair");
         //printf("\nDigite uma opcao: \n");
         scanf("%d", &opcao);
         switch(opcao){
@@ -37,6 +37,14 @@ int main(){
             case 4:
                 //Calcular altura
                 printf("%d", altura(raiz));
+                printf("\n");
+                break;
+            case 5:
+                printf("%d", qtd_nos(raiz));
+                printf("\n");
+                break;
+            case 6:
+                printf("%d", qtd_folhas(raiz));
                 printf("\n");
                 break;
             default:
