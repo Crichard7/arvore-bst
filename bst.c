@@ -95,3 +95,32 @@ int qtd_folhas(no *raiz){
     else
         return qtd_folhas(raiz->esq) + qtd_folhas(raiz->dir);
 }
+
+// Função para remover nós da árvore bst
+no* remover(no *raiz, int valor){
+    if(raiz == NULL){
+        printf("Elemento não encontrado!\n");
+        return NULL;
+    }
+    //Procura o nó a ser removido
+    else{
+        if(raiz->valor == valor){
+            //remove nós folhas
+            if(raiz->esq == NULL && raiz->dir == NULL){
+                free(raiz);
+                printf("Elemento removido: %d!\n", valor);
+                return NULL;
+            }
+            else{
+                //remove nós que possuem 1 ou 2 filhos
+            }
+        }
+        else{
+            if(valor < raiz->valor)
+                raiz->esq = remover(raiz->esq, valor);
+            else
+                raiz->dir = remover(raiz->dir, valor);
+            return raiz;
+        }
+    }
+}
