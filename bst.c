@@ -79,3 +79,19 @@ int altura(no *raiz){
             return altura_dir + 1;
     }
 }
+
+int qtd_nos(no *raiz){
+    if(raiz == NULL)
+        return 0;
+    else
+        return 1 + qtd_nos(raiz->esq) + qtd_nos(raiz->dir);
+}
+
+int qtd_folhas(no *raiz){
+    if(raiz == NULL)
+        return 0;
+    else if(raiz->esq == NULL && raiz->dir == NULL)
+        return 1;
+    else
+        return qtd_folhas(raiz->esq) + qtd_folhas(raiz->dir);
+}
