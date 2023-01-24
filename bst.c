@@ -112,7 +112,21 @@ no* remover(no *raiz, int valor){
                 return NULL;
             }
             else{
-                //remove nós que possuem 1 ou 2 filhos
+                //remove nós que possuem 2 filhos
+                if(raiz->esq != NULL && raiz->dir != NULL){
+
+                }
+                //remove nós que possuem apenas 1 filho
+                else{
+                    no *aux;
+                    if(raiz->esq != NULL)
+                        aux = raiz->esq;
+                    else
+                        aux = raiz->dir;
+                    free(raiz);
+                    printf("Elemento com 1 filho removido: %d!\n", valor);
+                    return aux;
+                }
             }
         }
         else{
