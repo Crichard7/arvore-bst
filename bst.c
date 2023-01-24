@@ -65,3 +65,17 @@ no* buscar(no *raiz, int valor){
         return NULL;
     }
 }
+
+int altura(no *raiz){
+    if(raiz == NULL){
+        return -1;
+    }
+    else{
+        int altura_esq = altura(raiz->esq);
+        int altura_dir = altura(raiz->dir);
+        if(altura_esq > altura_dir)
+            return altura_esq + 1;
+        else
+            return altura_dir + 1;
+    }
+}
