@@ -108,13 +108,20 @@ no* remover(no *raiz, int valor){
             //remove nós folhas
             if(raiz->esq == NULL && raiz->dir == NULL){
                 free(raiz);
-                printf("Elemento removido: %d!\n", valor);
+                printf("Elemento folha removido: %d!\n", valor);
                 return NULL;
             }
             else{
                 //remove nós que possuem 2 filhos
                 if(raiz->esq != NULL && raiz->dir != NULL){
-
+                    no *aux = raiz->esq;
+                    while(aux->dir != NULL)
+                        aux = aux->dir;
+                    raiz->valor = aux->valor;
+                    aux->valor = valor;
+                    printf("Elemento trocado: %d!\n", valor);
+                    raiz->esq = remover(raiz->esq, valor);
+                    return raiz;
                 }
                 //remove nós que possuem apenas 1 filho
                 else{
